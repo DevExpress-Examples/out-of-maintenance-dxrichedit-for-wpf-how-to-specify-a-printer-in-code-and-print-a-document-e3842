@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [MainWindow.xaml](./CS/PrintToCustomPrinter/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/PrintToCustomPrinter/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/PrintToCustomPrinter/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/PrintToCustomPrinter/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/PrintToCustomPrinter/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/PrintToCustomPrinter/MainWindow.xaml.vb))
 <!-- default file list end -->
 # DXRichEdit for WPF: How to specify a printer in code and print a document

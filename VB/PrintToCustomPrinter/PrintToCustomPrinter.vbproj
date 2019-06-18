@@ -39,37 +39,37 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v11.2">
+    <Reference Include="DevExpress.Data.v13.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Printing.v11.2.Core">
+    <Reference Include="DevExpress.Printing.v13.1.Core">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Docs.v11.2">
+    <Reference Include="DevExpress.Docs.v13.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Office.v11.2.Core">
+    <Reference Include="DevExpress.Office.v13.1.Core">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v11.2.Core">
+    <Reference Include="DevExpress.RichEdit.v13.1.Core">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Mvvm.v11.2">
+    <Reference Include="DevExpress.Xpf.Mvvm.v13.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Core.v11.2">
+    <Reference Include="DevExpress.Xpf.Core.v13.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Printing.v11.2">
+    <Reference Include="DevExpress.Xpf.Printing.v13.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Printing.v11.2.Core">
+    <Reference Include="DevExpress.Xpf.Printing.v13.1.Core">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Ribbon.v11.2">
+    <Reference Include="DevExpress.Xpf.Ribbon.v13.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.RichEdit.v11.2">
+    <Reference Include="DevExpress.Xpf.RichEdit.v13.1">
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

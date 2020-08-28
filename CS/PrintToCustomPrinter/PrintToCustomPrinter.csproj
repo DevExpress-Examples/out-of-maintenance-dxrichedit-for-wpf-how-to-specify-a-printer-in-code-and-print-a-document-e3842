@@ -45,7 +45,6 @@
     <Reference Include="DevExpress.Xpf.Mvvm.v13.1" />
     <Reference Include="DevExpress.Xpf.Core.v13.1" />
     <Reference Include="DevExpress.Xpf.Printing.v13.1" />
-    <Reference Include="DevExpress.Xpf.Printing.v13.1.Core" />
     <Reference Include="DevExpress.Xpf.Ribbon.v13.1" />
     <Reference Include="DevExpress.Xpf.RichEdit.v13.1" />
     <Reference Include="System" />

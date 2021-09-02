@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-#Region "#usings"
+﻿#Region "#usings"
 Imports System.Printing
 Imports System.Windows
 Imports System.Windows.Controls
@@ -15,13 +14,14 @@ Namespace PrintToCustomPrinter
 	''' </summary>
 	Partial Public Class MainWindow
 		Inherits Window
+
 		Public Sub New()
 			InitializeComponent()
 
 		End Sub
 
 		Private Sub barButtonItem1_ItemClick(ByVal sender As Object, ByVal e As DevExpress.Xpf.Bars.ItemClickEventArgs)
-			CType(New CustomXpfRichEditPrinter(richEditControl1), CustomXpfRichEditPrinter).PrintToMyPrinter()
+			Call (New CustomXpfRichEditPrinter(richEditControl1)).PrintToMyPrinter()
 		End Sub
 	End Class
 
@@ -29,19 +29,19 @@ Namespace PrintToCustomPrinter
 	#Region "#customprinter"
 	Public Class CustomXpfRichEditPrinter
 		Inherits XpfRichEditPrinter
+
 		Public Sub New(ByVal control As IRichEditControl)
 			MyBase.New(control)
 		End Sub
 
 		Public Sub PrintToMyPrinter()
 			Dim pDialog As New PrintDialog()
-			Dim enumerationFlags() As EnumeratedPrintQueueTypes = {EnumeratedPrintQueueTypes.Local, EnumeratedPrintQueueTypes.Connections}
-			Dim queues As PrintQueueCollection = New PrintServer().GetPrintQueues(enumerationFlags)
+			Dim queues As PrintQueueCollection = (New PrintServer()).GetPrintQueues( { EnumeratedPrintQueueTypes.Local, EnumeratedPrintQueueTypes.Connections })
 			Dim localPrinterEnumerator As System.Collections.IEnumerator = queues.GetEnumerator()
 			Dim printQueue As PrintQueue = Nothing
 
 			If localPrinterEnumerator.MoveNext() Then
-				printQueue = CType(localPrinterEnumerator.Current, PrintQueue)
+				printQueue = DirectCast(localPrinterEnumerator.Current, PrintQueue)
 			End If
 
 			If printQueue IsNot Nothing Then
